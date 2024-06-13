@@ -21,7 +21,7 @@
 -   [x] Tracking System: using [`Sentry`](https://sentry.io/)
 -   [x] Seamless use of `Docker` and `Docker Compose`
 -   [x] Export all users in `.csv` (or `.xlsx`, `.json`, `yaml` from admin panel)
--   [x] Configured CI pipeline from git hooks to github actions
+-   [x] Configured CI pipeline from git hooks to github actions (это пока выпилил)
 -   [x] [`SQLAlchemy V2`](https://pypi.org/project/SQLAlchemy/) is used to communicate with the database
 -   [x] Database Migrations with [`Alembic`](https://pypi.org/project/alembic/)
 -   [x] Ability to cache using decorator
