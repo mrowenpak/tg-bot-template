@@ -1,4 +1,4 @@
-FROM python:3.10.13-alpine3.18
+FROM python:3.12.3-alpine
 
 ENV POETRY_NO_INTERACTION=1 \
     POETRY_VIRTUALENVS_IN_PROJECT=1 \
@@ -11,13 +11,15 @@ WORKDIR /usr/src/app
 
 COPY . .
 
+RUN apk add gcc libc-dev libffi-dev
+
 RUN pip install --no-cache-dir "poetry==$POETRY_VERSION" \
     && poetry install --without admin --without dev --no-root \
     && pip uninstall -y poetry \
     && pybabel compile -d bot/locales \
     && rm -rf /home/appuser/.cache \
     && rm -rf $POETRY_CACHE_DIR \
-    && adduser -D appuser \
+    && adduser --disabled-password appuser \
     && chown -R appuser:appuser .
 
 USER appuser
