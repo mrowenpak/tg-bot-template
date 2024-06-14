@@ -1,17 +1,4 @@
-<h1 align="center"><em>Telegram bot template</em></h1>
-
-<h3 align="center">
-  Best way to create a scalable telegram bot with analytics
-</h3>
-
-<p align="center">
-  <a href="https://github.com/donBarbos/telegram-bot-template/tags"><img alt="GitHub tag (latest SemVer)" src="https://img.shields.io/github/v/tag/donBarbos/telegram-bot-template"></a>
-  <a href="https://github.com/donBarbos/telegram-bot-template/actions/workflows/linters.yml"><img src="https://img.shields.io/github/actions/workflow/status/donBarbos/telegram-bot-template/linters.yml?label=linters" alt="Linters Status"></a>
-  <a href="https://github.com/donBarbos/telegram-bot-template/actions/workflows/docker-image.yml"><img src="https://img.shields.io/github/actions/workflow/status/donBarbos/telegram-bot-template/docker-image.yml?label=docker%20image" alt="Docker Build Status"></a>
-  <a href="https://www.python.org/downloads"><img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python"></a>
-  <a href="https://github.com/donBarbos/telegram-bot-template/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-LGPLv3-blue.svg" alt="License"></a>
-  <a href="https://github.com/astral-sh/ruff"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Code style"></a>
-<p>
+<h1 align="center">Демо бот Fitls</h1>
 
 ## ✨ Features
 
@@ -64,16 +51,18 @@
     poetry run python -m bot
     ```
 
--   start admin panel
-
-    ```bash
-    poetry run gunicorn -c admin/gunicorn_conf.py
-    ```
+    <em>(если возникает ошибка с локалями - надо сгенерить переводы, инструкция тут: bot/middlewares/i18n.py)</em>
 
 -   make migrations
 
     ```bash
     poetry run alembic upgrade head
+    ```
+
+-   start admin panel
+
+    ```bash
+    poetry run gunicorn -c admin/gunicorn_conf.py
     ```
 
 ## 🌍 Environment variables
