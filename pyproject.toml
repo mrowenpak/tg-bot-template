@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "Best way to create a scalable telegram bot with analytics"
 homepage = "https://github.com/mrowenpak/tg-bot-template"
 repository = "https://github.com/mrowenpak/tg-bot-template"
-authors = [fizden]
+authors = ["fizden"]
 license = "LGPL-v3.0"
 readme = "README.md"
 
