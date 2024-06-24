@@ -1,4 +1,4 @@
-<h1 align="center">Демо бот Fitls</h1>
+<h1 align="center">Шаблон Телеграм бота</h1>
 
 ## ✨ Features
 
